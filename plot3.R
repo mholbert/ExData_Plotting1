@@ -9,7 +9,7 @@ tblSub <- subset(tblBulk, Date>=as.POSIXct("2007-02-01 00:00:00") & Date<=as.POS
 na.omit(tblSub)
 
 # draw the graph
-plot(tblSub$Date, tblSub$Sub_metering_1, xlab="", type="l", ylab="Energy sub metering")
+plot(tblSub$Date, tblSub$Sub_metering_1, type="1", xlab="", ylab="Energy sub metering")
 lines(tblSub$Date, tblSub$Sub_metering_2,col="red")
 lines(tblSub$Date, tblSub$Sub_metering_3,col="blue")
 legend("topright", col = c("black","red","blue"), lty = c(1,1,1), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
