@@ -9,6 +9,7 @@ tblSub <- subset(tblBulk, Date>=as.POSIXct("2007-02-01 00:00:00") & Date<=as.POS
 na.omit(tblSub)
 
 # draw the graph
+png("Plot2.png", width=480, height=480, units="px")
 plot(tblSub$Date, tblSub$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
-dev.copy(png, file="Plot2.png")
+#dev.copy(png, file="Plot2.png")
 dev.off()

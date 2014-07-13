@@ -9,6 +9,7 @@ tblSub <- subset(tblBulk, Date>="2007-02-01" & Date<="2007-02-02")
 na.omit(tblSub)
 
 # draw the graph
+png("Plot1.png", width=480, height=480, units="px")
 hist(tblSub$Global_active_power, xlab="Global Active Power (kilowatts)", main="Global Active Power", col="red")
-dev.copy(png, file="Plot1.png")
+#dev.copy(png, file="Plot1.png")
 dev.off()
