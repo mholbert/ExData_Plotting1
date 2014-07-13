@@ -10,5 +10,5 @@ na.omit(tblSub)
 
 # draw the graph
 plot(tblSub$Date, tblSub$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
-dev.copy(png, file="Plot1.png")
+dev.copy(png, file="Plot2.png")
 dev.off()
